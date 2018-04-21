@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">work-shop-tw</string>
+    <string name="details_description">Melhor do mundo!</string>
+    <string name="details_title">Restaurante do Nonaka</string>
+    <string name="details_text_description">Description</string>
+    <string name="details_text_title">Name</string>
+    <string name="details_button_done">Listo</string>
 </resources>
