@@ -5,35 +5,4 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/details_text_title" />
-
-    <EditText
-        android:id="@+id/textName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/details_title" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/details_text_description" />
-
-    <EditText
-        android:id="@+id/textDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/details_description" />
-
-    <Button
-        android:id="@+id/buttonDone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/details_button_done" />
-
 </LinearLayout>
