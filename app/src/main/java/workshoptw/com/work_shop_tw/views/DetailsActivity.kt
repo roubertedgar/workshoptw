@@ -1,13 +1,12 @@
 package workshoptw.com.work_shop_tw.views
 
 import android.app.Activity
-import android.app.Instrumentation
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_details.*
 import workshoptw.com.work_shop_tw.R
-import workshoptw.com.work_shop_tw.models.Place
+import workshoptw.com.work_shop_tw.models.place.Place
 
 class DetailsActivity : AppCompatActivity() {
 
