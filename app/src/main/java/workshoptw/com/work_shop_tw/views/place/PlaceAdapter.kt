@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import workshoptw.com.work_shop_tw.R
-import workshoptw.com.work_shop_tw.place.Place
+import workshoptw.com.work_shop_tw.models.place.Place
 
-class PlaceFormViewModel(private var items: List<Place>) : RecyclerView.Adapter<PlaceFormViewModel.PlaceViewHolder>() {
+class PlaceAdapter(private var items: List<Place>) : RecyclerView.Adapter<PlaceAdapter.PlaceViewHolder>() {
 
     override fun getItemCount(): Int {
         return items.size
