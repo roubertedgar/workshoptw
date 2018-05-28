@@ -1,4 +1,4 @@
-package workshoptw.com.work_shop_tw.views
+package workshoptw.com.work_shop_tw.views.place
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import workshoptw.com.work_shop_tw.R
-import workshoptw.com.work_shop_tw.models.place.Place
+import workshoptw.com.work_shop_tw.place.Place
 
-class PlaceAdapter(private var items: List<Place>) : RecyclerView.Adapter<PlaceAdapter.PlaceViewHolder>() {
+class PlaceFormViewModel(private var items: List<Place>) : RecyclerView.Adapter<PlaceFormViewModel.PlaceViewHolder>() {
 
     override fun getItemCount(): Int {
         return items.size
