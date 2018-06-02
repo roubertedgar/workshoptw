@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun loadPlaces() {
-        FactoryDAO.getPlaceDatabase(applicationContext).getAll()
+        placeDAO.getAll()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
 
