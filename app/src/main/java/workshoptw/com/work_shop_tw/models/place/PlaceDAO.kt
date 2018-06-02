@@ -9,10 +9,10 @@ interface PlaceDAO {
     fun getAll(): Flowable<List<Place>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(place: Place): Long
+    fun insert(place: Place)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(vararg place:Place) : List<Long>
+    fun insert(vararg place:Place)
 
     @Delete
     fun delete(place: Place)
