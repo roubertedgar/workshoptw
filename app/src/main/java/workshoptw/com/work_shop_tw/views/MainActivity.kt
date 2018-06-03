@@ -17,8 +17,6 @@ import workshoptw.com.work_shop_tw.views.place.PlaceViewModel
 class MainActivity : AppCompatActivity() {
 
     private lateinit var placeViewModel: PlaceViewModel
-    private lateinit var placeDAO: PlaceDAO
-
     private val placeList: MutableList<Place> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
-        placeDAO = FactoryDAO.getPlaceDatabase(applicationContext)
 
         setListeners()
         initRecyclerView()
