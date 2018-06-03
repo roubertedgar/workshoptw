@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var placeDAO: PlaceDAO
 
     companion object {
-        const val DETAILS_ACTIVITY_ID = 1
+        const val PLACE_FORM_REQUEST_CODE = 200
     }
 
-    val placeList: MutableList<Place> = mutableListOf()
+    private val placeList: MutableList<Place> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
         placeDAO = FactoryDAO.getPlaceDatabase(applicationContext)
 
         addButton.setOnClickListener {
-            val intent = Intent(this, DetailsActivity::class.java)
-            startActivityForResult(intent, DETAILS_ACTIVITY_ID)
+            val intent = Intent(this, PlaceFormActivity::class.java)
+            startActivityForResult(intent, PLACE_FORM_REQUEST_CODE)
         }
 
         recyclerPlaceList.layoutManager = LinearLayoutManager(this)
@@ -67,11 +67,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
         if (resultCode == Activity.RESULT_OK) {
-            val place = data?.getSerializableExtra("place") as Place
-            insertPlace(place)
+            if (requestCode == PLACE_FORM_REQUEST_CODE) {
+                val place = data?.getSerializableExtra("place") as Place
+                insertPlace(place)
+            }
         }
     }
 }

@@ -7,33 +7,36 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/details_text_title" />
+        android:text="@string/name_label"
+        android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/textName"
+        android:id="@+id/placeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/details_title" />
+        android:layout_marginBottom="20dp"
+        android:hint="@string/place_name_example" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/details_text_description" />
+        android:text="@string/description_label"
+        android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/textDescription"
+        android:id="@+id/placeDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/details_description" />
+        android:layout_marginBottom="30dp"
+        android:hint="@string/place_description" />
 
     <Button
-        android:id="@+id/buttonDone"
+        android:id="@+id/doneButton"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/details_button_done" />
+        android:layout_gravity="center_horizontal"
+        android:text="@string/done_text" />
+
 
 </LinearLayout>
