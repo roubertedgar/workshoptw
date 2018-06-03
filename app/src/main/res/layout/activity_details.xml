@@ -5,4 +5,28 @@
     android:orientation="vertical"
     android:padding="20dp">
 
+    <EditText
+        android:id="@+id/placeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/place_name" />
+
+    <EditText
+        android:id="@+id/placeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:hint="@string/place_description" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/done_text" />
+
+
 </LinearLayout>
