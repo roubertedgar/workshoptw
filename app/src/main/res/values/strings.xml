@@ -5,4 +5,7 @@
     <string name="details_text_description">Description</string>
     <string name="details_text_title">Name</string>
     <string name="details_button_done">Listo</string>
+    <string name="done_text">Done</string>
+    <string name="place_name">Place name</string>
+    <string name="place_description">Place description</string>
 </resources>

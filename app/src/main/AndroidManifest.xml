@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".views.DetailsActivity" />
+        <activity android:name=".views.PlaceFormActivity" />
     </application>
 
 </manifest>
