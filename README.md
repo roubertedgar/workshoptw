@@ -8,4 +8,7 @@ This project gonna be made in 4 steps:
  - [Step-3](https://github.com/roubertedgar/workshoptw/tree/step-3) - Until now, we just call the form to add a new place, get the result and put it on the list at the main screen, but we want to persist it, for that we gonna use [Room](https://developer.android.com/topic/libraries/architecture/room). 
  - [Step-4](https://github.com/roubertedgar/workshoptw/tree/step-4) - In this step we decide to use [MVVM](https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b), an architecture based on data streaming that helps us to have well defined layers with single responsibility.
 
+
+**Next steps:** We have plans to implements more steps, like, testing, dependency injection with dagger, http data access... keep calm :)
+
 ## Screens
