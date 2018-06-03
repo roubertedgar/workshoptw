@@ -10,8 +10,18 @@ import workshoptw.com.work_shop_tw.models.place.Place
 
 class PlaceAdapter(private var items: List<Place>) : RecyclerView.Adapter<PlaceAdapter.PlaceViewHolder>() {
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+
+        return PlaceViewHolder(view)
+    }
+
     override fun getItemCount(): Int {
         return items.size
+    }
+
+    override fun onBindViewHolder(holder: PlaceViewHolder, position: Int) {
+        holder.bind(items[position])
     }
 
     class PlaceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -21,14 +31,8 @@ class PlaceAdapter(private var items: List<Place>) : RecyclerView.Adapter<PlaceA
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
-
-        return PlaceViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: PlaceViewHolder, position: Int) {
-        holder.bind(items[position])
-    }
-
 }
+
+
+
+
