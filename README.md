@@ -30,11 +30,8 @@ Lets start wieh the save mathod:
     So, here we call the viewModel.savePlace that returns to us a Completable oberver from ReactiveX. So, we can use a tool test
     to make some assertions in this oberver. In the case is noValues, one Completable emmits no item, and, assertComplete to make
     sure that save action was succefull. Ok, here we have some problems.
-    
-     *The PlaceDAO need a rule to execute the task of save item immediately, so:   @get:Rule
-    var instantTaskExecutorRule = InstantTaskExecutorRule() solves the problem
-    
-     *Other problem that we have is that we subcribe on a thead and oberve on MainThread in the view model, it means that
+
+     *One problem here is that we have is that we subcribe on a thead and oberve on MainThread in the view model, it means that
      we are doing this stuff in background to. So we need use the ReactiveX plugins to make sure that all tasks execute immediately
      Here we can crate a Helper that setups the Reactive plugins, making all Schedulers immediate.
      

@@ -16,9 +16,6 @@ import workshoptw.com.work_shop_tw.util.RxSchedulerTestSetup
 
 @RunWith(MockitoJUnitRunner::class)
 class PlaceViewModelTest {
-    @get:Rule
-    var instantTaskExecutorRule = InstantTaskExecutorRule()
-
     @Mock
     lateinit var dao: PlaceDAO
 
