@@ -6,7 +6,7 @@ Ok,  lets start unitarily testing [PlaceViewModel](https://github.com/roubertedg
 
 So, in [PlaceViewModel](https://github.com/roubertedgar/workshoptw/blob/step-5/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PlaceViewModel.kt) we have two interfaces of communication. One is that saves our place and other is the interface that loads all places that we have.
 
-**Starting with the save method**: The save method receives a place as parameter and returns nothing to us. For that reason we use Completable Observer of ReactiveX. Completable emits no item, just complete a task. So, when we call **PlaceViewModel::save(place)** we receive a Completable that we can subscribe.
+**Starting with the save method**: The save method receives a place as parameter and returns a Completable Observer of ReactiveX. Completable emits no item, just complete a task. So, when we call **PlaceViewModel::save(place)** we receive a Completable that we can subscribe.
 
    ```kotlin
     fun savePlace(place: Place): Completable{
