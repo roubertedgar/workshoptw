@@ -83,8 +83,8 @@ After that we need to setup the schedulers calling setupRxScheduler on @Before m
 	viewModel = PlaceViewModel(dao) 
  }
 
-//To make sure that all became normal after test we make a reset
-@After, like this: @After fun tearDown() {
+//To make sure that all became normal after a test we call reset() of RxSchedulerTestSetup...
+@After fun tearDown() {
 	RxSchedulerTestSetup.reset() 
 }
 ```
