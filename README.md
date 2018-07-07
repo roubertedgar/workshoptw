@@ -6,7 +6,7 @@ Ok,  lets start unitarily testing [PlaceViewModel](https://github.com/roubertedg
 
 So, in [PlaceViewModel](https://github.com/roubertedgar/workshoptw/blob/step-5/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PlaceViewModel.kt) we have two interfaces of communication. One is that saves our place and other is the interface that loads all places that we have.
 
-**Starting with the save method**: The save method receives a place as parameter and returns a Completable Observer of ReactiveX. Completable emits no item, just complete a task. So, when we call **PlaceViewModel::save(place)** we receive a Completable that we can subscribe.
+**Starting with the save method**: The save method receives a place as parameter and returns nothing to us. For that reason we use Completable Observer of ReactiveX. Completable emits no item, just complete a task. So, when we call **PlaceViewModel::save(place)** we receive a Completable that we can subscribe.
 
    ```kotlin
     fun savePlace(place: Place): Completable{
@@ -83,38 +83,43 @@ After that we need to setup the schedulers calling setupRxScheduler on @Before m
 	viewModel = PlaceViewModel(dao) 
  }
 
-//To make sure that all became normal after a test we call reset() of RxSchedulerTestSetup...
-@After fun tearDown() {
+//To make sure that all became normal after test we make a reset
+@After, like this: @After fun tearDown() {
 	RxSchedulerTestSetup.reset() 
 }
 ```
 
 **Now we can run our first test :)**
 
-So now we can test the getAll method, that should return 0...N Places. Só we can start testing that values returned by
-getAll is empty. But first. Lets look at the getAll in PlaceDAO
+It's time to write a test for getAll() method in PlaceViewModel. The method getAll() returns 0...N Places to us. In this case we should test the empty return scenery, and the 1 or N return scenery, right?
+ But first... let's look at the getAll() in [PlaceDAO](https://github.com/roubertedgar/workshoptw/blob/step-5/app/src/main/java/workshoptw/com/work_shop_tw/models/place/PlaceDAO.kt)
 
- @Query("Select * from Place")
+```kotlin
+@Query("Select * from Place")
 fun getAll(): Flowable<List<Place>>
+```
+PlaceDAO::getAll() returns a Flowable, that is a observable of ReactiveX, it's like a simple Observable<T> plus BackPressure Strategy, but we can avoid this BackPressure thing for now.
 
-PlaceDAO::getAll() returns a Flowable, that is a obervable of ReactiveX, it is like a simple Observable<T> plus BackPressure
-Strategy, but we can avoid this backpressure thing for now, just becouse we can consume all data produced by getAll method.
+Ok, now we knew what getAll() returns, let's write our second test for our first scenery, where's no place are returned. It will be like our first tests, but now we can test the values returned by the observable.
 
-Ok, now we know what getAll returns we can start our test. It will be like our first tests, but now we can test the values
-returned by the obervable.
+Calling viewModel.getAll() returns to us a ReactiveX observable, so we can make ".test()" and assert some stuffs, like:
 
-Lets start calling viewModel.getAll()
-Once it returns a ReactiveX obervable we can make ".test()" and assert some stuffs, like:
-
-viewModel.getAll().test()
+```kotlin
+viewModel.getAll()
+	.test()
     .assertNoValues()
     .assertComplete()
+````
     
-If we run this test it will give us a null pointer exception. Thats becouse we don't stub the placeDAO.getAll().
-So, when we call placeDAO.getAll() we shoud return a Flowable that respond with a empty value, like:
-whenever(dao.getAll()).thenReturn(Flowable.empty()). The final verions of our test will be like:
+If we run this test it will give us a null pointer exception. That's because we don't stub the placeDAO.getAll().
+So, placeDAO.getAll() should return a Flowable that respond with a empty value:
+```kotlin
+ whenever(dao.getAll()).thenReturn(Flowable.empty())
+ ```
+The final version of our test will be like:
 
-    @Test
+```kotlin
+@Test
 fun emptyWhenAreNoItemsSaved() {
     whenever(dao.getAll()).thenReturn(Flowable.empty())
 
@@ -122,28 +127,39 @@ fun emptyWhenAreNoItemsSaved() {
             .assertNoValues()
             .assertComplete()
 }
+```
 
-Ok, we test the empty case. Lets test when we have item...
+Ok, we test the empty case. Lets test when we have some item...
 
-Following the same path of code above, we have to stubs the responde of placeDAO.getAll(). But now we shound return
-a observable that emmits a item at least.
+Following the same path of code above, we have to stubs the responde of placeDAO.getAll(). But now, placeDAO.getAll() should return a observable that emits a item at least.
 
-So... whenever(dao.getAll()).thenReturn(Flowable.just(getPlaces())), the get places method is implemented like
+```kotlin
+whenever(dao.getAll()).thenReturn(Flowable.just(getPlaces()))
+```
 
- private fun getPlaces(): List<Place> =
-        listOf(Place("", ""), Place("", ""))
+The get places method is a helper method to us:
 
-Now we can assert that our returned observable contains values.
-
+```kotlin
+private fun getPlaces(): List<Place> =
+ listOf(Place("", ""), Place("", ""))
+```
+Now we can assert that our returned observable contains values:
+```kotlin
  viewModel.getAll().test()
-            .assertValue {
-                it.size == 2 //here we assert 2 itens becouse our getPlaces return 2 places =D, we could make more calls
-                //of assert value asserting values inner each item
-             }.assertComplete() //just to assert that the emmiting is finished
-             
+            .assertValue {it.size == 2}
+            .assertComplete() 
+```
+In the code above we just assert that our result has 2 places. Bud we could test the inner results to.
+
+```kotlin
+	.assertValue {it[0].name==""}
+	.assertValue{it[1].name=="" }	
+```
+          
   The final version of our test will be like:
   
-      @Test
+```kotlin
+@Test
 fun returnsAllSavedPlacesWhenGetAll() {
     whenever(dao.getAll()).thenReturn(Flowable.just(getPlaces()))
 
@@ -153,11 +169,6 @@ fun returnsAllSavedPlacesWhenGetAll() {
             }.assertComplete()
 }
 ```
-                 
-              
-    
-
-     
      
 
 
