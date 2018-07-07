@@ -164,9 +164,8 @@ fun returnsAllSavedPlacesWhenGetAll() {
     whenever(dao.getAll()).thenReturn(Flowable.just(getPlaces()))
 
     viewModel.getAll().test()
-            .assertValue {
-                it.size == 2
-            }.assertComplete()
+            .assertValue {it.size == 2}
+	    .assertComplete()
 }
 ```
      
