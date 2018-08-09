@@ -20,11 +20,11 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
 
-Lets starts creating a ViewModel for our MainActivity
+Lets starts creating a ViewModel for our PlaceForm
 	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5OTAwMTYxMywtMTk5OTQ1ODE4NiwtOT
+eyJoaXN0b3J5IjpbLTg2NDAxMzk2NiwtMTk5OTQ1ODE4NiwtOT
 cyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4ODM5XX0=
 -->
