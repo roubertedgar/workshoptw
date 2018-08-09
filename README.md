@@ -14,13 +14,13 @@ In this Step we gonna use MVVM, because we are using ReactiveX to make our async
 -   The  ViewModel — exposes streams of data relevant to the View
 -   The  DataModel — abstracts the data source. The ViewModel works with the DataModel to get and save the data.
 
-While on MVP architecture, the view knows who's the 
+While on MVP architecture we have a two way interface that makes the View knows the presenter and the Presenter knows the view. In the MVVM we j
 
 
 	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTQwNjk1NywtOTcyOTQ3OTcsLTEyMz
+eyJoaXN0b3J5IjpbLTYxODY4Nzc0MCwtOTcyOTQ3OTcsLTEyMz
 AwNDE3NjgsMjgwNzg4ODM5XX0=
 -->
