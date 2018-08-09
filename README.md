@@ -9,11 +9,11 @@ Today we have 3 well know architectures:
 
 Só, you should read more about the architectures above, and see what is best for your project. 
 
-In this Step we gonna use MVVM, because it's a stream based architecture, and we are using  once we use ReactiveX to, so, this two things together works very well. 
+In this Step we gonna use MVVM, because we are using ReactiveX to make our asynchronous it's a stream based architecture, and we are using ReactiveX to. 
 
 The Movel-View-ViewModel architecu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjA0Nzk4MiwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTk2MjgzNzQzNywyODA3ODg4MzldfQ==
 -->
