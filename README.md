@@ -101,22 +101,17 @@ override fun onCreate(savedInstanceState: Bundle?) {
 	...
 	...
 	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
-		doneButton.setOnClickListener {
-			val name = placeName.text.toString()
-			val description = placeDescription.text.toString()
-			val place = Place(name, description)
-
-			placeViewModel.savePlace(place)
-		}
 }
 ```
+
+Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxNjY0NTgxLDgwMDMxNTQxMCwtMTY5NT
+eyJoaXN0b3J5IjpbNjAxMDgwNTI5LDgwMDMxNTQxMCwtMTY5NT
 U1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMz
 MjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMT
 k5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4
