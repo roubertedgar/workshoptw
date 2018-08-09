@@ -76,10 +76,10 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 
 Continuing... following the MVVM  specifications, the ViewModel should expose streams to the view, but until now we are't doing this. The idea is return a stream to the view, once we are working with ReactiveX, we could return a Observable to the view on save a Place. 
 
-If y 
+If you look at the save method of PlaceDAO, you will see  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3MjM3Mjg3LDE0NzI1ODc5NDUsLTIxMz
-QyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4
-NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMj
-gwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTE1NzYzODk1NTIsMTQ3MjU4Nzk0NSwtMj
+EzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2
+Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OC
+wyODA3ODg4MzldfQ==
 -->
