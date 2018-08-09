@@ -40,11 +40,11 @@ override fun onCreate(savedInstanceState: Bundle?) {
 Nice =D, now our view have a ViewModel. Só, if we look at the PlaceFormActivity, we will see that PlaceFormActivity returns a place to the MainActivity, and then, the MainActivity saves it.
 This is not good, we should make the PlaceFormActivity tells the ViewModel to save the Place for us, right? So, let's continue our refactoring, and see what we can do...
 
-So, our Place is
+So, the Place that we want to save belongs to the Model layer, vu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODE0NzU2NCwxMjIyODI3MzE5LDE2MT
+eyJoaXN0b3J5IjpbLTcyMjgyMTU4NSwxMjIyODI3MzE5LDE2MT
 kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
 NjgsMjgwNzg4ODM5XX0=
 -->
