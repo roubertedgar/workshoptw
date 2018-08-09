@@ -119,8 +119,43 @@ override fun onCreate(savedInstanceState: Bundle?) {
 		}
 }
 ```
-done, now, when we save a place and this action is completed, we go back to the MainActivity, once PlaceFormActivity was finished. Here is the final version of PlaceFormActivity:
+done, now, when we save a place and this action is completed, we go back to the MainActivity, once PlaceFormActivity was finished. Here is the final version of PlaceFormActivity with a little refactoring, just pass the save action to a method.
 
+```kotlin 
+package workshoptw.com.work_shop_tw.views.place
+
+import android.os.Bundle
+
+import android.support.v7.app.AppCompatActivity
+
+import kotlinx.android.synthetic.main.activity_place_form.*
+
+import workshoptw.com.work_shop_tw.R
+
+import workshoptw.com.work_shop_tw.models.FactoryDAO
+
+import workshoptw.com.work_shop_tw.models.place.Place
+
+class PLaceFormActivity : AppCompatActivity() {
+
+private lateinit var placeViewModel: PlaceViewModel
+
+override fun onCreate(savedInstanceState: Bundle?) {
+
+super.onCreate(savedInstanceState)
+
+setContentView(R.layout.activity_place_form)
+placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+doneButton.setOnClickListener {
+val name = placeName.text.toString()
+val description = placeDescription.text.toString()
+val place = Place(name, description)
+savePlace(place)
+}
+}
+private fun savePlace(place: Place) = placeViewModel.savePlace(place).subscribe { finish() }
+}
+```
 
 
 
@@ -134,7 +169,7 @@ done, now, when we save a place and this action is completed, we go back to the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5MTk2NDUxLDgwMDMxNTQxMCwtMTY5NT
+eyJoaXN0b3J5IjpbNTg3Nzc5MTcwLDgwMDMxNTQxMCwtMTY5NT
 U1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMz
 MjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMT
 k5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4
