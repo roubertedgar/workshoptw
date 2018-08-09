@@ -20,7 +20,7 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 
 
-## Refactoring
+## Refactoring Place
 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
 
@@ -152,9 +152,9 @@ class PLaceFormActivity : AppCompatActivity() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMjkxODMxNiw4MDAzMTU0MTAsLTE2OT
-U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
-MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
-E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
-ODgzOV19
+eyJoaXN0b3J5IjpbODIyMTU5NTk3LC00MjI5MTgzMTYsODAwMz
+E1NDEwLC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0
+NSwtMjEzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMT
+YxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0
+MTc2OCwyODA3ODg4MzldfQ==
 -->
