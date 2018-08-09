@@ -74,10 +74,10 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 	}
 ```
 
-Continuing... following the MVVM  specifications, the ViewModel should expose streams to the view and, if you look at the PlaceDAO, you will see that the save
+Continuing... following the MVVM  specifications, the ViewModel should expose streams to the view and, if you look at the PlaceDAO, you will see that the save method don't returns nothing to us. But is is not a problem. The ReactiveX have a Observable called Completable, that completes a action and tells if it was successfull 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTM1OTkwNSwxNDcyNTg3OTQ1LC0yMT
-M0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3
-ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LD
-I4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbOTQwMDA3OTYyLDE0NzI1ODc5NDUsLTIxMz
+QyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4
+NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMj
+gwNzg4ODM5XX0=
 -->
