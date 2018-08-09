@@ -87,9 +87,11 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 	}
 ```
 
+The subscribeOn and the observeOn after call the Completable.fromAction is just to execute this action on the I
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI4MDMxMjc1LDE0NzI1ODc5NDUsLTIxMz
-QyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4
-NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMj
-gwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbMTI3MTE5ODAyMCwxNDcyNTg3OTQ1LC0yMT
+M0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3
+ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LD
+I4MDc4ODgzOV19
 -->
