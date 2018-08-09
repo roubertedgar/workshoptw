@@ -173,3 +173,6 @@ fun returnsAllSavedPlacesWhenGetAll() {
 
                     
                     
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM3NTE1ODc4MV19
+-->
