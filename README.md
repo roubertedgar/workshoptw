@@ -9,11 +9,11 @@ Today we have 3 well know architectures:
 
 Só, you should read more about the architectures above, and see what is best for your project. 
 
-In this Step we gonna use MVVM to 
+In this Step we gonna use MVVM, just because it's based on data streams.
 
 The Movel-View-ViewModel architecu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODU5NDA5MywyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbMjAxNzY0Njg1NCwyODA3ODg4MzldfQ==
 -->
