@@ -26,12 +26,13 @@ We can make this flow better, making the PlaceFormActivity save the created Plac
 But, we don't want to do this save action on the view, so, we create the PlaceViewModel:
 
 ```kotlin
-	 
+	class  PlaceViewModel() 
 ``` 
+The ViewModel talks with the Model layer, so
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjgyNzMxOSwxNjE5MzY3ODQsLTE5OT
-k0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4ODgz
-OV19
+eyJoaXN0b3J5IjpbMTUzNjIzNDU3NiwxMjIyODI3MzE5LDE2MT
+kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
+NjgsMjgwNzg4ODM5XX0=
 -->
