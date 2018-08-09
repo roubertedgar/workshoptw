@@ -94,13 +94,15 @@ The ```subscribeOn(Schedulers.io())``` and the ```observeOn(AndroidSchedulers.ma
 
 Ok, i think we done with the PlaceViewModel for now. Let's back to the  PlaceFormActivity. 
 
-The PlaceViewModel instantiation are asking to the PlaceDAO, to solve it, we gonna use the FactoryDAO to instantiate the PlaceDAO for us.
+The PlaceViewModel instantiation are asking to the PlaceDAO, to solve it, we gonna use the FactoryDAO to instantiate the PlaceDAO for us and pass into the PlaceViewModel constructor inner PlaceFormActivity.
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODI3NzQ3Myw4MDAzMTU0MTAsLTE2OT
+eyJoaXN0b3J5IjpbLTYxMTQ0OTk2NSw4MDAzMTU0MTAsLTE2OT
 U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
 MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
 E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
