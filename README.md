@@ -4,8 +4,6 @@ Ok, now we have an application that creates, store and fetch places from databas
 
 So, thinking about scalability, we had to provide a way to ensure that changes on our app don't became a problem. Making programmers feel comfortable to work with our code. For that, we have unit tests.
 
-In the   we decide to use MVVM as the architecture for our application. Once that we want to have well defined layers that make our app easy to test. All right, is test Tiiimeee!!!
-
 Ok,  lets start unitarily testing [PlaceViewModel](https://github.com/roubertedgar/workshoptw/blob/step-5/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PlaceViewModel.kt) class using [Mockito Kotlin](https://github.com/nhaarman/mockito-kotlin), JUnit and some features of ReactiveX that helps us test easy.
 
 So, in [PlaceViewModel](https://github.com/roubertedgar/workshoptw/blob/step-5/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PlaceViewModel.kt) we have two interfaces of communication. One is that saves our place and other is the interface that loads all places that we have.
@@ -178,5 +176,5 @@ fun returnsAllSavedPlacesWhenGetAll() {
                     
                     
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzMyODc3MTEsLTM3NTE1ODc4MV19
+eyJoaXN0b3J5IjpbLTEyOTUyMTM0NDQsLTM3NTE1ODc4MV19
 -->
