@@ -103,7 +103,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ```
 Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by.
 
-**Continuing...** On the PlaceFormActivity we are calling the PlaceViewModel::save(Place) when we do a click at the Done button. Ok, bud now we have to 
+**Continuing...** On the PlaceFormActivity we are calling the PlaceViewModel::save(Place) when we do a click at the Done button. Ok, the save method of PlaceViewModel returns a Observable, so, we have to subscribe at it. 
+
 
 
 
@@ -114,7 +115,7 @@ Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we ju
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDMxOTUwNyw4MDAzMTU0MTAsLTE2OT
+eyJoaXN0b3J5IjpbLTU3MzI4NjMyOCw4MDAzMTU0MTAsLTE2OT
 U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
 MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
 E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
