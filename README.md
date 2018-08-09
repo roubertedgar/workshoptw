@@ -41,11 +41,12 @@ Nice =D, now our view have a ViewModel. Só, if we look at the PlaceFormActivity
 This is not good, we should make the PlaceFormActivity tells the ViewModel to save the Place for us, right? So, let's continue our refactoring, and see what we can do...
 
 The Place that we want to save belongs to the Model layer, so, our ViewModel should work with our Model layer, right? 
-The Idea here is make the View pass the created Place to the ViewModel and tells it to save the created Place. After that, our ViewModel should calls the Model layer to save dh
+The Idea here is make the View pass the created Place to the ViewModel and tells it to save the created Place. After that, our ViewModel should calls the Model layer to save the Place for us. 
+First things first, let's call the ViewMOd
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQyODk2MzAsMTIyMjgyNzMxOSwxNj
-E5MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQx
-NzY4LDI4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbMjExMTA4MTkyNywxMjIyODI3MzE5LDE2MT
+kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
+NjgsMjgwNzg4ODM5XX0=
 -->
