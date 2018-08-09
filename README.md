@@ -4,7 +4,7 @@ We was making a lot of things on the view, making our activities break the singl
 
 Today we have 3 well know architectures that you should read more about and see what is best for your project:
 -  [MVC](https://medium.com/upday-devs/android-architecture-patterns-part-1-model-view-controller-3baecef5f2b6)	Model View Controller
--	[MVP](https://medium.com/upday-devs/android-architecture-patterns-part-2-model-view-presenter-8a6faaae14a5) Model View Presenter - Can have other variations, like [VIPER](http://luboganev.github.io/blog/clean-architecture-pt1/)
+-	[MVP](https://medium.com/upday-devs/android-architecture-patterns-part-2-model-view-presenter-8a6faaae14a5) Model View Presenter - Can have other variants, like [VIPER](http://luboganev.github.io/blog/clean-architecture-pt1/)
 -	[MVVM](https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b) Model View ViewModel 
 
 In this Step we gonna use MVVM, because we are using ReactiveX to make our asynchronous works, like fetch places from the database. Once MVVM is data stream based, it will make our job easier.
@@ -41,7 +41,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 	...
 ``` 
 
-Nice =D, now our view have a ViewModel. Só, if we look at the PlaceFormActivity, we will see that PlaceFormActivity returns a place to the MainActivity, and then, the MainActivity saves it.
+Nice =D, now our view have a ViewModel. So, if we look at the PlaceFormActivity, we will see that PlaceFormActivity returns a place to the MainActivity, and then, the MainActivity saves it.
 This is not good, we should make the PlaceFormActivity tells the ViewModel to save the Place for us, right? So, let's continue our refactoring, and see what we can do...
 
 The Place that we want to save belongs to the Model layer, so, our ViewModel should work with our Model layer, right? 
@@ -109,10 +109,12 @@ Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we ju
 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2MTA3OTg2LDgwMDMxNTQxMCwtMTY5NT
-U1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMz
-MjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMT
-k5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4
-ODM5XX0=
+eyJoaXN0b3J5IjpbLTE3MjMwNjYzMDQsODAwMzE1NDEwLC0xNj
+k1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIw
+MzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC
+0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3
+ODg4MzldfQ==
 -->
