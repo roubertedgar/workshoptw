@@ -20,11 +20,11 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
 
-Lets starts creating a ViewModel for our PlaceForm
-	
+Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt)
+For that	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDAxMzk2NiwtMTk5OTQ1ODE4NiwtOT
+eyJoaXN0b3J5IjpbMTA5MzkyNDIyOCwtMTk5OTQ1ODE4NiwtOT
 cyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4ODM5XX0=
 -->
