@@ -62,8 +62,16 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 Now, we gonna implements the save method on the PlaceViewModel:
 
+```kotlin
+class PlaceViewModel(private val database: PlaceDAO) {
+	fun savePlace(place: Place): Completable =
+	Completable.fromAction { database.insert(place) }
+	.subscribeOn(Schedulers.io())
+	.observeOn(AndroidSchedulers.mainThread())
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMzMzMzg1LDE5NTQxMzU1ODcsMTIyMj
-gyNzMxOSwxNjE5MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3
-LC0xMjMwMDQxNzY4LDI4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbMTczMjY0MTE2MCwxOTU0MTM1NTg3LDEyMj
+I4MjczMTksMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5
+NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ==
 -->
