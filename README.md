@@ -64,14 +64,13 @@ Now, we gonna implements the save method on the PlaceViewModel:
 
 ```kotlin
 class PlaceViewModel(private val database: PlaceDAO) {
-	fun savePlace(place: Place): Completable =
-	Completable.fromAction { database.insert(place) }
-	.subscribeOn(Schedulers.io())
-	.observeOn(AndroidSchedulers.mainThread())
+	fun savePlace(place: Place)
 ```
 
+o
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjY0MTE2MCwxOTU0MTM1NTg3LDEyMj
+eyJoaXN0b3J5IjpbMTg5NzgyNDkxMCwxOTU0MTM1NTg3LDEyMj
 I4MjczMTksMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5
 NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ==
 -->
