@@ -4,6 +4,8 @@ Ok, now we have an application that creates, store and fetch places from databas
 
 So, thinking about scalability, we had to provide a way to ensure that changes on our app don't became a problem. Making programmers feel comfortable to work with our code. For that, we have unit tests.
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzYyMjUwMCwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTE1NTIzMTU0MDAsMjgwNzg4ODM5XX0=
 -->
