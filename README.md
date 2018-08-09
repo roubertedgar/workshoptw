@@ -81,13 +81,15 @@ If you look at the save method of PlaceDAO, you will see that are no returns. Fo
 ```kotlin
 class PlaceViewModel(private  val  database: PlaceDAO) {
 	fun savePlace(place: Place):Completable{
-		Completable.fromAction{database.save(place)}
+		Completable.fromAction { database.insert(place) }
+		.subscribeOn(Schedulers.io())
+		.observeOn(AndroidSchedulers.mainThread())
 	}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjI0ODE5MSwxNDcyNTg3OTQ1LC0yMT
-M0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3
-ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LD
-I4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbMjI4MDMxMjc1LDE0NzI1ODc5NDUsLTIxMz
+QyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4
+NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMj
+gwNzg4ODM5XX0=
 -->
