@@ -20,10 +20,10 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
 
-Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt). O
+Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt). Our PlaceFormActivity just returns the place name and description values to the MainActivity, and then, the MainActivity 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODYyNTY2NjksLTE5OTk0NTgxODYsLT
+eyJoaXN0b3J5IjpbLTE0OTM5ODQ0MjQsLTE5OTk0NTgxODYsLT
 k3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4ODgzOV19
 -->
