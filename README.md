@@ -73,9 +73,11 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 		database.save(place)
 	}
 ```
+
+Continuing, following the MVVM  specifications, the ViewModel s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjU4Nzk0NSwtMjEzNDIwMzMyNSwxOT
-U0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC0xOTk5NDU4
-MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ
-==
+eyJoaXN0b3J5IjpbMTY4MzU2MjY4OSwxNDcyNTg3OTQ1LC0yMT
+M0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3
+ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LD
+I4MDc4ODgzOV19
 -->
