@@ -103,6 +103,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ```
 Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by.
 
+Continuing with the refactoring with the Place
+
 
 
 
@@ -112,9 +114,9 @@ Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we ju
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMwNjYzMDQsODAwMzE1NDEwLC0xNj
-k1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIw
-MzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC
-0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3
-ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTQ1OTgyMTAzOSw4MDAzMTU0MTAsLTE2OT
+U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
+MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
+E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
+ODgzOV19
 -->
