@@ -103,7 +103,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ```
 Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by.
 
-**Continuing...** On the PlaceFormActivity we are calling the PlaceViewModel::save(Place) when we do a click at the Done button. Ok, the save method of PlaceViewModel returns a Observable, so, we have to subscribe at it ad when the action is completed, we should finalize the PlaceFormA
+**Continuing...** On the PlaceFormActivity we are calling the PlaceViewModel::save(Place) when we do a click at the Done button. Ok, the save method of PlaceViewModel returns a Observable, so, we have to subscribe at it and when the action is completed, we should finalize the PlaceFormActivity.
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
@@ -120,6 +120,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
+done, now, when we save a place and this action is completed, 
+
 
 
 
@@ -130,9 +132,9 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDgxNzIwMTEsODAwMzE1NDEwLC0xNj
-k1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIw
-MzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC
-0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3
-ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTcyOTcxNTAzNCw4MDAzMTU0MTAsLTE2OT
+U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
+MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
+E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
+ODgzOV19
 -->
