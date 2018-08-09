@@ -63,14 +63,13 @@ override fun onCreate(savedInstanceState: Bundle?) {
 Now, we gonna implements the save method on the PlaceViewModel:
 
 ```kotlin
-class PlaceViewModel(private val database: PlaceDAO) {
+class PlaceViewModel() {
 	fun savePlace(place: Place)
 ```
-
-o
+To save our place we have to use our PlaceDAO::save(place:Place). For that, lets receive a PlaceDAO at the constructor 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzgyNDkxMCwxOTU0MTM1NTg3LDEyMj
-I4MjczMTksMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5
-NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbODgzMDI4MjUwLDE5NTQxMzU1ODcsMTIyMj
+gyNzMxOSwxNjE5MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3
+LC0xMjMwMDQxNzY4LDI4MDc4ODgzOV19
 -->
