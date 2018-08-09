@@ -94,26 +94,26 @@ The ```subscribeOn(Schedulers.io())``` and the ```observeOn(AndroidSchedulers.ma
 
 Ok, i think we done with the PlaceViewModel for now. Let's back to the  PlaceFormActivity. 
 
-The PlaceViewModel instantiation are asking to the PlaceDAO, to solve it, we gonna use the FactoryDAO to instantiate the PlaceDAO for us and pass into the PlaceViewModel constructor inner PlaceFormActivity.
+The PlaceViewModel instantiation are asking to the PlaceDAO, to solve it, we gonna use the FactoryDAO to instantiate the PlaceDAO for us and gives it to the PlaceViewModel constructor inner PlaceFormActivity.
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
-	...
-	...
 	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
 }
 ```
 
-Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by
+Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by.
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAxMDgwNTI5LDgwMDMxNTQxMCwtMTY5NT
-U1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMz
-MjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMT
-k5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4
-ODM5XX0=
+eyJoaXN0b3J5IjpbLTczNTM1MTA0MCw4MDAzMTU0MTAsLTE2OT
+U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
+MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
+E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
+ODgzOV19
 -->
