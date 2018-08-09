@@ -1,4 +1,8 @@
-# workshoptw
+Unit tests =D
+
+Ok, now we have an application that creates, store and fetch places from database with a well defined layers by the MVVM architecture. Right, but we want to make some changes on our system. Put new features and things like that.
+
+So, thinking about scalability, we had to provide a way to ensure that changes on our app don't became a problem. Making programmers feel comfortable to work with our code. For that, we have unit tests.
 
 In the [step 4](https://github.com/roubertedgar/workshoptw/tree/step-4)  we decide to use MVVM as the architecture for our application. Once that we want to have well defined layers that make our app easy to test. All right, is test Tiiimeee!!!
 
@@ -174,5 +178,5 @@ fun returnsAllSavedPlacesWhenGetAll() {
                     
                     
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTE1ODc4MV19
+eyJoaXN0b3J5IjpbMjAzNDM5NTM0NywtMzc1MTU4NzgxXX0=
 -->
