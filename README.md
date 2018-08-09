@@ -53,7 +53,7 @@ First things first, let's tells the ViewModel to save our place passing the crea
 override fun onCreate(savedInstanceState: Bundle?) {
 	...
 	...
-	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+	placeViewModel = PlaceViewModel()
 		doneButton.setOnClickListener {
 			val name = placeName.text.toString()
 			val description = placeDescription.text.toString()
@@ -96,15 +96,29 @@ Ok, i think we done with the PlaceViewModel for now. Let's back to the  PlaceFor
 
 The PlaceViewModel instantiation are asking to the PlaceDAO, to solve it, we gonna use the FactoryDAO to instantiate the PlaceDAO for us and pass into the PlaceViewModel constructor inner PlaceFormActivity.
 
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+	...
+	...
+	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+		doneButton.setOnClickListener {
+			val name = placeName.text.toString()
+			val description = placeDescription.text.toString()
+			val place = Place(name, description)
+
+			placeViewModel.savePlace(place)
+		}
+}
+```
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTQ0OTk2NSw4MDAzMTU0MTAsLTE2OT
-U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
-MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
-E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
-ODgzOV19
+eyJoaXN0b3J5IjpbNTcxNjY0NTgxLDgwMDMxNTQxMCwtMTY5NT
+U1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMz
+MjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMT
+k5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4
+ODM5XX0=
 -->
