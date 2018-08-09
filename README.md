@@ -47,9 +47,9 @@ First things first, let's call the ViewModel passing the created Place:
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
-		...
-		...
-		placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+	...
+	...
+	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
 		doneButton.setOnClickListener {
 			val name = placeName.text.toString()
 			val description = placeDescription.text.toString()
@@ -61,7 +61,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE0MjkwNjEsMTIyMjgyNzMxOSwxNj
-E5MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQx
-NzY4LDI4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MT
+kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
+NjgsMjgwNzg4ODM5XX0=
 -->
