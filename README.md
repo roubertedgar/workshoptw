@@ -23,10 +23,15 @@ Ok, now we know the basics of MVVM, we can start refactoring our code.
 Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt). Our PlaceFormActivity just returns the place name and description values to the MainActivity, and then, the MainActivity saves this place. 
 We can make this flow better, making the PlaceFormActivity save the created Place, right? 
 
-But, we don't want to do this save action on the view, so, we create the PlaceViewModel
+But, we don't want to do this save action on the view, so, we create the PlaceViewModel:
+
+```kotlin
+	 
+``` 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC05Nz
-I5NDc5NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbMTIyMjgyNzMxOSwxNjE5MzY3ODQsLTE5OT
+k0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4ODgz
+OV19
 -->
