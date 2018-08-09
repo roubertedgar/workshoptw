@@ -18,11 +18,13 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 ![enter image description here](https://cdn-images-1.medium.com/max/800/0*5mD214cjNXU-V6lf.png)
 
+Ok, now we know the basics of MVVM, we can start refactoring our code.
 
+Lets starts creating a ViewModel for our MainActivity
 	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMj
-MwMDQxNzY4LDI4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbLTU5OTAwMTYxMywtMTk5OTQ1ODE4NiwtOT
+cyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4ODM5XX0=
 -->
