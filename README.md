@@ -29,10 +29,10 @@ and adding the ViewModel at the PlaceFormActivity
 
 ```kotlin
 private lateinit var placeViewModel: PlaceViewModel
-	override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_place_form)
-	 placeViewModel=PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+override fun onCreate(savedInstanceState: Bundle?) {
+super.onCreate(savedInstanceState)
+setContentView(R.layout.activity_place_form)
+placeViewModel=PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
 
 ``` 
 
@@ -45,7 +45,7 @@ But, we don't want to do this save action on the view, so, we create the PlaceVi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAwMTQzMjMxLDEyMjI4MjczMTksMTYxOT
-M2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2
-OCwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTI2ODE4OTcxMywxMjIyODI3MzE5LDE2MT
+kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
+NjgsMjgwNzg4ODM5XX0=
 -->
