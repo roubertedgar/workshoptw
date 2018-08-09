@@ -30,22 +30,17 @@ and adding the ViewModel at the PlaceFormActivity
 ```kotlin
 private lateinit var placeViewModel: PlaceViewModel
 override fun onCreate(savedInstanceState: Bundle?) {
-super.onCreate(savedInstanceState)
-setContentView(R.layout.activity_place_form)
-placeViewModel=PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
-
+	super.onCreate(savedInstanceState)
+	setContentView(R.layout.activity_place_form)
+	placeViewModel=PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+	...
+	...
 ``` 
 
-
-Today, our PlaceFormActivity just returns the place name and description values to the MainActivity, and then, the MainActivity saves this place. 
-We can make this flow better, making the PlaceFormActivity save the created Place, right? 
-
-But, we don't want to do this save action on the view, so, we create the PlaceViewModel:
-
-
+Nice =D, Now
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODE4OTcxMywxMjIyODI3MzE5LDE2MT
-kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
-NjgsMjgwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTEzNjI2ODk0LDEyMjI4MjczMTksMTYxOT
+M2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2
+OCwyODA3ODg4MzldfQ==
 -->
