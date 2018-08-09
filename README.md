@@ -4,14 +4,16 @@ We was making a lot of things on the view, making our activities break the singl
 
 Today we have 3 well know architectures that you should read more about and see what is best for your project:
 -  [MVC](https://medium.com/upday-devs/android-architecture-patterns-part-1-model-view-controller-3baecef5f2b6)	Model View Controller
--	[MVP](https://medium.com/upday-devs/android-architecture-patterns-part-2-model-view-presenter-8a6faaae14a5) Model View Presenter - Can have other variations, like VIPER
+-	[MVP](https://medium.com/upday-devs/android-architecture-patterns-part-2-model-view-presenter-8a6faaae14a5) Model View Presenter - Can have other variations, like [VIPER](http://luboganev.github.io/blog/clean-architecture-pt1/)
 -	[MVVM](https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b) Model View ViewModel 
 
 In this Step we gonna use MVVM, because we are using ReactiveX to make our asynchronous works, like fetch places from the database. Once MVVM is data stream based, it will make our job easier.
 
-The Movel-View-ViewModel architecture 
+**The Movel-View-ViewModel architecture**
+	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzAwNDE3NjgsMjgwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MD
+c4ODgzOV19
 -->
