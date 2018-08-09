@@ -101,7 +101,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
 	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
 }
 ```
-
 Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we just need to pass it by.
 
 
@@ -111,9 +110,9 @@ Once the getPlaceDatabase needs a Context to create our PlaceDAO instance, we ju
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNTM1MTA0MCw4MDAzMTU0MTAsLTE2OT
-U1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAz
-MzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLT
-E5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4
-ODgzOV19
+eyJoaXN0b3J5IjpbOTg2MTA3OTg2LDgwMDMxNTQxMCwtMTY5NT
+U1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMz
+MjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMT
+k5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4
+ODM5XX0=
 -->
