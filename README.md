@@ -9,7 +9,7 @@ Today we have 3 well know architectures that you should read more about and see 
 
 In this Step we gonna use MVVM, because we are using ReactiveX to make our asynchronous works, like fetch places from the database. Once MVVM is data stream based, it will make our job easier.
 
-**The Movel-View-ViewModel architecture**
+## The Movel-View-ViewModel architecture
 -   The  View— that informs the ViewModel about the user’s actions
 -   The  ViewModel — exposes streams of data relevant to the View
 -   The  DataModel — abstracts the data source. The ViewModel works with the DataModel to get and save the data.
@@ -17,6 +17,10 @@ In this Step we gonna use MVVM, because we are using ReactiveX to make our async
 While on MVP architecture we have a two way interface that makes the View knows the presenter and the Presenter knows the view, the ViewModel (Like the presenter) of MVVM just expose streams to the view, so, the ViewModel don't knows the View, avoiding to much knowledge between the layers. You can se a MVVM schema below:
 
 ![enter image description here](https://cdn-images-1.medium.com/max/800/0*5mD214cjNXU-V6lf.png)
+
+
+
+## Refactoring
 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
 
@@ -93,8 +97,9 @@ Ok, i think we done with the PlaceViewModel for now. Let's back to the  PlaceFor
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwMzE1NDEwLC0xNjk1NTU4MDQyLDE3MT
-YwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIwMzMyNSwxOTU0MTM1
-NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC
-05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTExOTg4MjI1NzYsODAwMzE1NDEwLC0xNj
+k1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIw
+MzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC
+0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3
+ODg4MzldfQ==
 -->
