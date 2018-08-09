@@ -20,10 +20,10 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 
 
-## Refactoring Place
+## Refactoring 
 
+### PlaceFormActivity 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
-
 Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt)
 
 ```kotlin
@@ -152,7 +152,7 @@ class PLaceFormActivity : AppCompatActivity() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyMTU5NTk3LC00MjI5MTgzMTYsODAwMz
+eyJoaXN0b3J5IjpbNDAzODczODEzLC00MjI5MTgzMTYsODAwMz
 E1NDEwLC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0
 NSwtMjEzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMT
 YxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0
