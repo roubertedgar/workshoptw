@@ -46,25 +46,23 @@ The Idea here is make the View pass the created Place to the ViewModel and tells
 First things first, let's call the ViewModel passing the created Place:
 
 ```koltin 
-class PLaceFormActivity : AppCompatActivity() {
-private lateinit var placeViewModel: PlaceViewModel
 override fun onCreate(savedInstanceState: Bundle?) {
-super.onCreate(savedInstanceState)
-setContentView(R.layout.activity_place_form)
-placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
-doneButton.setOnClickListener {
-val name = placeName.text.toString()
-val description = placeDescription.text.toString()
-val place = Place(name, description)
-placeViewModel.savePlace(place)
+	...
+	...
+	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
 
+	doneButton.setOnClickListener {
+	val name = placeName.text.toString()
+	val description = placeDescription.text.toString()
+	val place = Place(name, description)
+	placeViewModel.savePlace(place)
+	}
 }
-
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDM0MjEzNTUsMTIyMjgyNzMxOSwxNj
+eyJoaXN0b3J5IjpbLTEzOTU5MTIxOTUsMTIyMjgyNzMxOSwxNj
 E5MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQx
 NzY4LDI4MDc4ODgzOV19
 -->
