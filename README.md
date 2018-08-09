@@ -74,10 +74,10 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 	}
 ```
 
-Continuing... following the MVVM  specifications, the ViewModel should expose streams to the view. Until now, we are't givin
+Continuing... following the MVVM  specifications, the ViewModel should expose streams to the view, but until now, we are't giving a stream to the View. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwOTk1MjAxLDE0NzI1ODc5NDUsLTIxMz
-QyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4
-NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMj
-gwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTM4NTMzOTA0MSwxNDcyNTg3OTQ1LC0yMT
+M0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3
+ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LD
+I4MDc4ODgzOV19
 -->
