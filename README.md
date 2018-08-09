@@ -45,24 +45,23 @@ The Idea here is make the View pass the created Place to the ViewModel and tells
 
 First things first, let's call the ViewModel passing the created Place:
 
-```koltin 
+```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
-	...
-	...
-	placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
-
-	doneButton.setOnClickListener {
-	val name = placeName.text.toString()
-	val description = placeDescription.text.toString()
-	val place = Place(name, description)
-	placeViewModel.savePlace(place)
-	}
+		...
+		...
+		placeViewModel = PlaceViewModel(FactoryDAO.getPlaceDatabase(applicationContext))
+		doneButton.setOnClickListener {
+			val name = placeName.text.toString()
+			val description = placeDescription.text.toString()
+			val place = Place(name, description)
+			placeViewModel.savePlace(place)
+		}
 }
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTU5MTIxOTUsMTIyMjgyNzMxOSwxNj
+eyJoaXN0b3J5IjpbLTExNzE0MjkwNjEsMTIyMjgyNzMxOSwxNj
 E5MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQx
 NzY4LDI4MDc4ODgzOV19
 -->
