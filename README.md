@@ -92,12 +92,14 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 ```
 The ```subscribeOn(Schedulers.io())``` and the ```observeOn(AndroidSchedulers.mainThread())``` after call the Completable.fromAction is just to execute this action on the ReactiveX IO thread and notify the result on the Android Main Thread. We have to use this because the Android system don't let us doing database access or some other hard work at the Main Thread.
 
-Ok, i think we done with the PlaceViewModel for now. Let's back to the  PlaceFormActivity.
+Ok, i think we done with the PlaceViewModel for now. Let's back to the  PlaceFormActivity. 
+
+The PlaceViewModel instantiation are asking to the PlaceDAO, to solve it
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg4MjI1NzYsODAwMzE1NDEwLC0xNj
+eyJoaXN0b3J5IjpbLTEzOTU4NDc4MjIsODAwMzE1NDEwLC0xNj
 k1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIw
 MzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC
 0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3
