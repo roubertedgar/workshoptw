@@ -10,16 +10,15 @@ Today we have 3 well know architectures that you should read more about and see 
 In this Step we gonna use MVVM, because we are using ReactiveX to make our asynchronous works, like fetch places from the database. Once MVVM is data stream based, it will make our job easier.
 
 **The Movel-View-ViewModel architecture**
-
--   The  _View_ — that informs the ViewModel about the user’s actions
--   The  _ViewModel_ — exposes streams of data relevant to the View
--   The  _DataModel_ — abstracts the data source. The ViewModel works with the DataModel to get and save the data.
+-   The  View— that informs the ViewModel about the user’s actions
+-   The  ViewModel — exposes streams of data relevant to the View
+-   The  DataModel — abstracts the data source. The ViewModel works with the DataModel to get and save the data.
 
 
 	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTE3ODc0LC05NzI5NDc5NywtMTIzMD
-A0MTc2OCwyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTE3OTY4NDgwNTAsLTk3Mjk0Nzk3LC0xMj
+MwMDQxNzY4LDI4MDc4ODgzOV19
 -->
