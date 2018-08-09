@@ -20,12 +20,12 @@ While on MVP architecture we have a two way interface that makes the View knows 
 
 Ok, now we know the basics of MVVM, we can start refactoring our code.
 
-Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt).
+Lets starts creating a ViewModel for our [PlaceFormActivity](https://github.com/roubertedgar/workshoptw/blob/step-4/app/src/main/java/workshoptw/com/work_shop_tw/views/place/PLaceFormActivity.kt)
 
 ```kotlin
 	class  PlaceViewModel() 
 ``` 
-and adding the ViewModel at the 
+and add the ViewModel at the PlaceFormActivity
 
 Today, our PlaceFormActivity just returns the place name and description values to the MainActivity, and then, the MainActivity saves this place. 
 We can make this flow better, making the PlaceFormActivity save the created Place, right? 
@@ -35,7 +35,7 @@ But, we don't want to do this save action on the view, so, we create the PlaceVi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NDIxMDkwNSwxMjIyODI3MzE5LDE2MT
-kzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3
-NjgsMjgwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTUwOTk4NzExLDEyMjI4MjczMTksMTYxOT
+M2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2
+OCwyODA3ODg4MzldfQ==
 -->
