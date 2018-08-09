@@ -68,11 +68,14 @@ class PlaceViewModel() {
 ```
 To save our place we have to use our PlaceDAO::save(place:Place). For that, lets receive a PlaceDAO at the constructor of the PlaceViewModel:
 ```kotlin
-class PlaceViewModel() {
-	fun savePlace(place: Place)
+class PlaceViewModel(private  val  database: PlaceDAO) {
+	fun savePlace(place: Place){
+		database.save(place)
+	}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQyMDMzMjUsMTk1NDEzNTU4NywxMj
-IyODI3MzE5LDE2MTkzNjc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3
-OTcsLTEyMzAwNDE3NjgsMjgwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbMTQ3MjU4Nzk0NSwtMjEzNDIwMzMyNSwxOT
+U0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2Nzg0LC0xOTk5NDU4
+MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OCwyODA3ODg4MzldfQ
+==
 -->
