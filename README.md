@@ -76,10 +76,18 @@ class PlaceViewModel(private  val  database: PlaceDAO) {
 
 Continuing... following the MVVM  specifications, the ViewModel should expose streams to the view, but until now we are't doing this. The idea is return a stream to the view, once we are working with ReactiveX, we could return a Observable to the view on save a Place. 
 
-If you look at the save method of PlaceDAO, you will see that are no returns. For that, the best choice is use the Completable ob
+If you look at the save method of PlaceDAO, you will see that are no returns. For that, the best choice is use the Completable observer of ReactiveX, that completes an action and tells if it was successful or not.
+
+```kotlin
+class PlaceViewModel(private  val  database: PlaceDAO) {
+	fun savePlace(place: Place):Completable{
+		Completable.fromAction{database.save(place)}
+	}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4MDk4MDcyLDE0NzI1ODc5NDUsLTIxMz
-QyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4
-NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMj
-gwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbMTcyNjI0ODE5MSwxNDcyNTg3OTQ1LC0yMT
+M0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3
+ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LD
+I4MDc4ODgzOV19
 -->
