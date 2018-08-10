@@ -174,15 +174,15 @@ addButton.setOnClickListener {
 }
 ```
 **Using ViewModel on MainActivity**
-If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Following the MVVM rules, we gonna use a Vi
+If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Following the MVVM rules, we gonna use a ViewModel to work with Model layer to us. One thing here is that we already have a ViewModel for Place, and we can reuse it and add the fetch metho
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDM3ODQzOCwtNzUzNTMxOTU0LDEwMD
-IzODUxNzMsMTMzNTEyNTIzNCwtMTYzOTUzNjYwNCwxMTU3MTEx
-NjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQxMCwtMT
-Y5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQy
-MDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NC
-wtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgw
-Nzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTIwMzI1NTc4OTIsLTc1MzUzMTk1NCwxMD
+AyMzg1MTczLDEzMzUxMjUyMzQsLTE2Mzk1MzY2MDQsMTE1NzEx
+MTYyOCw0MDM4NzM4MTMsLTQyMjkxODMxNiw4MDAzMTU0MTAsLT
+E2OTU1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0
+MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3OD
+QsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4
+MDc4ODgzOV19
 -->
