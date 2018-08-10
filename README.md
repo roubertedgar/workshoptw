@@ -148,9 +148,9 @@ class PLaceFormActivity : AppCompatActivity() {
 
 ### MainActivity
 
-On the MainActivity we can remove the 
+On the MainActivity we can remove the onActivityResult logic, once PlaceFormActivity don't return any  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzQ0MTA3MiwtMTYzOTUzNjYwNCwxMT
+eyJoaXN0b3J5IjpbLTEyOTQ0NTkwNCwtMTYzOTUzNjYwNCwxMT
 U3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQx
 MCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLT
 IxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkz
