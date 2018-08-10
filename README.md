@@ -47,7 +47,7 @@ This is not good, we should make the PlaceFormActivity tells the ViewModel to sa
 The Place that we want to save belongs to the Model layer, so, our ViewModel should work with our Model layer, right? 
 The Idea here is make the View pass the created Place to the ViewModel and tells it to save the created Place. After that, our ViewModel should calls the Model layer to save the Place for us. 
 
-First things first, let's remove remove the the and tells the ViewModel to save our place passing the created Place:
+First things first, let's remove the the result activity logic from PlaceFormActivity and tells the ViewModel to save our place passing the created Place:
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
@@ -144,10 +144,10 @@ class PLaceFormActivity : AppCompatActivity() {
 
 On the main a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDY5NjU0NjksLTE2Mzk1MzY2MDQsMT
-E1NzExMTYyOCw0MDM4NzM4MTMsLTQyMjkxODMxNiw4MDAzMTU0
-MTAsLTE2OTU1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC
-0yMTM0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5
-MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNz
-Y4LDI4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbMTg4NDM3NDYwNywtMTYzOTUzNjYwNCwxMT
+U3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQx
+MCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLT
+IxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkz
+Njc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3Nj
+gsMjgwNzg4ODM5XX0=
 -->
