@@ -174,14 +174,14 @@ addButton.setOnClickListener {
 }
 ```
 **Using ViewModel on MainActivity**
-If you look at the MainActivity, y'll see that we are fetching our places directly on the View. L
+If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Looking 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1NjU0NDUzLDEwMDIzODUxNzMsMTMzNT
-EyNTIzNCwtMTYzOTUzNjYwNCwxMTU3MTExNjI4LDQwMzg3Mzgx
-MywtNDIyOTE4MzE2LDgwMDMxNTQxMCwtMTY5NTU1ODA0MiwxNz
-E2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMzMjUsMTk1NDEz
-NTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMTk5OTQ1ODE4Ni
-wtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTc1MzUzMTk1NCwxMDAyMzg1MTczLDEzMz
+UxMjUyMzQsLTE2Mzk1MzY2MDQsMTE1NzExMTYyOCw0MDM4NzM4
+MTMsLTQyMjkxODMxNiw4MDAzMTU0MTAsLTE2OTU1NTgwNDIsMT
+cxNjA5OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAzMzI1LDE5NTQx
+MzU1ODcsMTIyMjgyNzMxOSwxNjE5MzY3ODQsLTE5OTk0NTgxOD
+YsLTk3Mjk0Nzk3LC0xMjMwMDQxNzY4LDI4MDc4ODgzOV19
 -->
