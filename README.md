@@ -178,11 +178,11 @@ If you look at the MainActivity, y'll see that we are fetching our places direct
 
 **Ok, starting by the PlaceViewModel...** we need a method that will return all places for us, so, we start to moving the fetch logic from MainActivity to PlaceViewModel:
 
-
+Is just copy and past the loadPlaces 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1Njg1MjYwMywtNzUzNTMxOTU0LDEwMD
+eyJoaXN0b3J5IjpbMTQ1MjAzNDY1NiwtNzUzNTMxOTU0LDEwMD
 IzODUxNzMsMTMzNTEyNTIzNCwtMTYzOTUzNjYwNCwxMTU3MTEx
 NjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQxMCwtMT
 Y5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQy
