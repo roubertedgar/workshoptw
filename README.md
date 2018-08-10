@@ -162,20 +162,21 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 	}
 }
 ``` 
-Previously we was calling the PlaceFormActivity using the ```startActivityForResult```. We change it, just using 
-```startActivity()```
+Previously we was calling the PlaceFormActivity using the ```startActivityForResult```. We can switch it by 
+```startActivity()``` for the same reason that we just remove the onActivityResult logic
 
 ```kotlin
 addButton.setOnClickListener {
-val intent = Intent(this, PlaceFormActivity::class.java)
-startActivity(intent)
+	val intent = Intent(this, PlaceFormActivity::class.java)
+	startActivity(intent)
 }
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcwMzU3MzI2LC0xNjM5NTM2NjA0LDExNT
-cxMTE2MjgsNDAzODczODEzLC00MjI5MTgzMTYsODAwMzE1NDEw
-LC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMj
-EzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2
-Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OC
-wyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbMTMzNTEyNTIzNCwtMTYzOTUzNjYwNCwxMT
+U3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQx
+MCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLT
+IxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkz
+Njc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3Nj
+gsMjgwNzg4ODM5XX0=
 -->
