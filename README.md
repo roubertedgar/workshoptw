@@ -185,7 +185,8 @@ if you don't customize the button text tint, the tint of done text will be the s
         step:done_button_text="Some other text" />
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzQ5NDM1NCwxODEzMTQwNzYzLDE3OT
-c0OTQzNTQsMTgxMzE0MDc2MywxNzk3NDk0MzU0LDE4MTMxNDA3
-NjMsMTc5NzQ5NDM1NCwxODEzMTQwNzYzLDQzMzg3OTc0XX0=
+eyJoaXN0b3J5IjpbMTgxMzE0MDc2MywxNzk3NDk0MzU0LDE4MT
+MxNDA3NjMsMTc5NzQ5NDM1NCwxODEzMTQwNzYzLDE3OTc0OTQz
+NTQsMTgxMzE0MDc2MywxNzk3NDk0MzU0LDE4MTMxNDA3NjMsND
+MzODc5NzRdfQ==
 -->
