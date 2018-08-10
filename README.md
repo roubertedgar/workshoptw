@@ -176,9 +176,9 @@ addButton.setOnClickListener {
 **Using ViewModel on MainActivity**
 If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Following the MVVM rules, we gonna use a ViewModel to work with Model layer for us. One thing here is that we already have a ViewModel for Place, and we can reuse it adding the fetch method that will returns all place to the MainActivity.
 
-**Ok, starting by the PlaceViewModel...** we need a method that will return all places for us, so, we start to moving the fetch logic from MainActivity to PlaceViewModel:
+**Ok, starting by the PlaceViewModel...** we need a method that will return all places for us, so, we start to moving the fetch logic from MainActivity to PlaceViewModel, calling the PlaceDAO.
 
-Is just copy the loadPlaces method and paste on the PlaceViewModel but without the subscribe block:
+
 ```kotlin 
 private fun loadPlaces() {
 	placeDAO.getAll()
@@ -189,11 +189,11 @@ private fun loadPlaces() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDQ1MDM2NywtMzc5MTAzMjc3LC03NT
-M1MzE5NTQsMTAwMjM4NTE3MywxMzM1MTI1MjM0LC0xNjM5NTM2
-NjA0LDExNTcxMTE2MjgsNDAzODczODEzLC00MjI5MTgzMTYsOD
-AwMzE1NDEwLC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4
-Nzk0NSwtMjEzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMT
-ksMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIz
-MDA0MTc2OF19
+eyJoaXN0b3J5IjpbLTE2MDA1NjUyNiwxMDU0NDUwMzY3LC0zNz
+kxMDMyNzcsLTc1MzUzMTk1NCwxMDAyMzg1MTczLDEzMzUxMjUy
+MzQsLTE2Mzk1MzY2MDQsMTE1NzExMTYyOCw0MDM4NzM4MTMsLT
+QyMjkxODMxNiw4MDAzMTU0MTAsLTE2OTU1NTgwNDIsMTcxNjA5
+OTQ3OCwxNDcyNTg3OTQ1LC0yMTM0MjAzMzI1LDE5NTQxMzU1OD
+csMTIyMjgyNzMxOSwxNjE5MzY3ODQsLTE5OTk0NTgxODYsLTk3
+Mjk0Nzk3XX0=
 -->
