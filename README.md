@@ -49,6 +49,8 @@ The Idea here is make the View pass the created Place to the ViewModel and tells
 
 First things first, let's remove the the result activity logic from PlaceFormActivity
 ```kotlin
+
+//Remove the code be
 intent.putExtra("place", place)
 setResult(Activity.RESULT_OK, intent)
 finish()
@@ -151,6 +153,7 @@ class PLaceFormActivity : AppCompatActivity() {
 On the MainActivity we can remove the onActivityResult logic, once PlaceFormActivity has no more results returned.
 
 ```kotlin
+//Remove this block of code
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 	if (resultCode == Activity.RESULT_OK) {
 		if (requestCode == PLACE_FORM_REQUEST_CODE) {
@@ -161,10 +164,10 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 }
 ``` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1NjI5MTIxLC0xNjM5NTM2NjA0LDExNT
-cxMTE2MjgsNDAzODczODEzLC00MjI5MTgzMTYsODAwMzE1NDEw
-LC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMj
-EzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMTksMTYxOTM2
-Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIzMDA0MTc2OC
-wyODA3ODg4MzldfQ==
+eyJoaXN0b3J5IjpbLTEzMjg3NzYxMDcsLTE2Mzk1MzY2MDQsMT
+E1NzExMTYyOCw0MDM4NzM4MTMsLTQyMjkxODMxNiw4MDAzMTU0
+MTAsLTE2OTU1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC
+0yMTM0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5
+MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNz
+Y4LDI4MDc4ODgzOV19
 -->
