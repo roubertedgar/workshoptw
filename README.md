@@ -149,6 +149,8 @@ class PLaceFormActivity : AppCompatActivity() {
 
 ### MainActivity
 
+  **Removing on activity result logic**
+
 On the MainActivity we can remove the onActivityResult logic, once PlaceFormActivity has no more results returned.
 
 ```kotlin
@@ -171,11 +173,11 @@ addButton.setOnClickListener {
 	startActivity(intent)
 }
 ```
-
+Using pla
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5OTM1NzM5MCwxMzM1MTI1MjM0LC0xNj
+eyJoaXN0b3J5IjpbLTY0MDM1NTQzNywxMzM1MTI1MjM0LC0xNj
 M5NTM2NjA0LDExNTcxMTE2MjgsNDAzODczODEzLC00MjI5MTgz
 MTYsODAwMzE1NDEwLC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMT
 Q3MjU4Nzk0NSwtMjEzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4
