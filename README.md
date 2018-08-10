@@ -181,14 +181,26 @@ If you look at the MainActivity, y'll see that we are fetching our places direct
 Is just copy the loadPlaces method and paste on the PlaceViewModel:
 
 
+```kotlin 
+private fun loadPlaces() {
+placeDAO.getAll()
+.subscribeOn(Schedulers.io())
+.observeOn(AndroidSchedulers.mainThread())
+.subscribe {
+placeList.clear()
+placeList.addAll(it)
+recyclerPlaceList.adapter.notifyDataSetChanged()
+}
+}
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTEwMzI3NywtNzUzNTMxOTU0LDEwMD
-IzODUxNzMsMTMzNTEyNTIzNCwtMTYzOTUzNjYwNCwxMTU3MTEx
-NjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQxMCwtMT
-Y5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQy
-MDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NC
-wtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3NjgsMjgw
-Nzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTY3MzM0OTc0MywtMzc5MTAzMjc3LC03NT
+M1MzE5NTQsMTAwMjM4NTE3MywxMzM1MTI1MjM0LC0xNjM5NTM2
+NjA0LDExNTcxMTE2MjgsNDAzODczODEzLC00MjI5MTgzMTYsOD
+AwMzE1NDEwLC0xNjk1NTU4MDQyLDE3MTYwOTk0NzgsMTQ3MjU4
+Nzk0NSwtMjEzNDIwMzMyNSwxOTU0MTM1NTg3LDEyMjI4MjczMT
+ksMTYxOTM2Nzg0LC0xOTk5NDU4MTg2LC05NzI5NDc5NywtMTIz
+MDA0MTc2OF19
 -->
