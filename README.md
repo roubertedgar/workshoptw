@@ -53,7 +53,7 @@ intent.putExtra("place", place)
 setResult(Activity.RESULT_OK, intent)
 finish()
 ```
- and tells the ViewModel to save our place passing the created Place wit:
+ and tells the ViewModel to save our place passing the created Place witch will be:
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
@@ -148,12 +148,12 @@ class PLaceFormActivity : AppCompatActivity() {
 
 ### MainActivity
 
-On the main a we can remove the
+On the main a we can remove the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODQxMDMwMCwtMTYzOTUzNjYwNCwxMT
-U3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQx
-MCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLT
-IxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkz
-Njc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3Nj
-gsMjgwNzg4ODM5XX0=
+eyJoaXN0b3J5IjpbLTEyMjMyNjM0NTQsLTE2Mzk1MzY2MDQsMT
+E1NzExMTYyOCw0MDM4NzM4MTMsLTQyMjkxODMxNiw4MDAzMTU0
+MTAsLTE2OTU1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC
+0yMTM0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5
+MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNz
+Y4LDI4MDc4ODgzOV19
 -->
