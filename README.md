@@ -142,9 +142,9 @@ class PLaceFormActivity : AppCompatActivity() {
 
 ### MainActivity
 
-On the main a
+On the main a we can remove the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDM3NDYwNywtMTYzOTUzNjYwNCwxMT
+eyJoaXN0b3J5IjpbMTE4NzE4MTE0OCwtMTYzOTUzNjYwNCwxMT
 U3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQx
 MCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLT
 IxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkz
