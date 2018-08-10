@@ -174,11 +174,11 @@ addButton.setOnClickListener {
 }
 ```
 **Using ViewModel on MainActivity**
-If you look at the MainActivity, y'll see that we 
+If you look at the MainActivity, y'll see that we are 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTMwNjc0OTIsMTAwMjM4NTE3MywxMz
+eyJoaXN0b3J5IjpbLTE3NzQ2MzEwODgsMTAwMjM4NTE3MywxMz
 M1MTI1MjM0LC0xNjM5NTM2NjA0LDExNTcxMTE2MjgsNDAzODcz
 ODEzLC00MjI5MTgzMTYsODAwMzE1NDEwLC0xNjk1NTU4MDQyLD
 E3MTYwOTk0NzgsMTQ3MjU4Nzk0NSwtMjEzNDIwMzMyNSwxOTU0
