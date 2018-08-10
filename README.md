@@ -49,8 +49,7 @@ The Idea here is make the View pass the created Place to the ViewModel and tells
 
 First things first, let's remove the the result activity logic from PlaceFormActivity
 ```kotlin
-
-//Remove the code be
+//Remove the code below from setOnClickListener{} block
 intent.putExtra("place", place)
 setResult(Activity.RESULT_OK, intent)
 finish()
@@ -163,11 +162,12 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 	}
 }
 ``` 
+Previously 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjg3NzYxMDcsLTE2Mzk1MzY2MDQsMT
-E1NzExMTYyOCw0MDM4NzM4MTMsLTQyMjkxODMxNiw4MDAzMTU0
-MTAsLTE2OTU1NTgwNDIsMTcxNjA5OTQ3OCwxNDcyNTg3OTQ1LC
-0yMTM0MjAzMzI1LDE5NTQxMzU1ODcsMTIyMjgyNzMxOSwxNjE5
-MzY3ODQsLTE5OTk0NTgxODYsLTk3Mjk0Nzk3LC0xMjMwMDQxNz
-Y4LDI4MDc4ODgzOV19
+eyJoaXN0b3J5IjpbLTY1MjI4NTQ1MywtMTYzOTUzNjYwNCwxMT
+U3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQx
+MCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLT
+IxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkz
+Njc4NCwtMTk5OTQ1ODE4NiwtOTcyOTQ3OTcsLTEyMzAwNDE3Nj
+gsMjgwNzg4ODM5XX0=
 -->
