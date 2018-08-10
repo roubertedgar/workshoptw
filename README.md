@@ -176,8 +176,7 @@ addButton.setOnClickListener {
 **Using ViewModel on MainActivity**
 If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Following the MVVM rules, we gonna use a ViewModel to work with Model layer for us. One thing here is that we already have a ViewModel for Place, and we can reuse it adding the fetch method that will returns all place to the MainActivity.
 
-**Ok, starting by the PlaceViewModel...** we need a method that will return all places for us. The PlaceDAO contains the getAll method, that returns a Flowable, witch is a variation of ReactiveX Observable. Ok, for now is just return this Flowable for who's called this method we start to moving the fetch logic from MainActivity to PlaceViewModel, calling the PlaceDAO.
-
+**Ok, starting by the PlaceViewModel...** we need a method that will return all places for us. The PlaceDAO contains the getAll method, that returns a Flowable, witch is a variation of ReactiveX Observable. Ok, for now is just return this Flowable to the View
 
 ```kotlin 
 private fun loadPlaces() {
@@ -189,7 +188,7 @@ private fun loadPlaces() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5MDUzMDI3LC0xNjAwNTY1MjYsMTA1ND
+eyJoaXN0b3J5IjpbNDg4ODc0ODE5LC0xNjAwNTY1MjYsMTA1ND
 Q1MDM2NywtMzc5MTAzMjc3LC03NTM1MzE5NTQsMTAwMjM4NTE3
 MywxMzM1MTI1MjM0LC0xNjM5NTM2NjA0LDExNTcxMTE2MjgsND
 AzODczODEzLC00MjI5MTgzMTYsODAwMzE1NDEwLC0xNjk1NTU4
