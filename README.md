@@ -174,7 +174,7 @@ addButton.setOnClickListener {
 }
 ```
 **Using ViewModel on MainActivity**
-If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Following the MVVM rules, we gonna use a ViewModel to work with Model layer for us. One thing here is that we already have a ViewModel for Place, and we can reuse it adding the fetch method that will returns all place to the MainActivity.
+If you look at the MainActivity, y'll see that we are fetching our places directly on the View. Following the MVVM rules, we gonna use a ViewModel to work with Model layer for us. One thing here is that we already have a ViewModel for Place, and we can reuse it adding the fetch method that will returns all places to the MainActivity.
 
 **Ok, starting by the PlaceViewModel...** we need a method that will return all places for us. The PlaceDAO contains the getAll method, that returns a Flowable, witch is a variation of ReactiveX Observable. Ok, for now is just return this Flowable to the View.
 
@@ -190,11 +190,11 @@ class PlaceViewModel(private val database: PlaceDAO) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NDQ0OTk2MSwtMTYwMDU2NTI2LDEwNT
-Q0NTAzNjcsLTM3OTEwMzI3NywtNzUzNTMxOTU0LDEwMDIzODUx
-NzMsMTMzNTEyNTIzNCwtMTYzOTUzNjYwNCwxMTU3MTExNjI4LD
-QwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMxNTQxMCwtMTY5NTU1
-ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5NDUsLTIxMzQyMDMzMj
-UsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2MTkzNjc4NCwtMTk5
-OTQ1ODE4Nl19
+eyJoaXN0b3J5IjpbLTEzMDg2OTU5NDAsMTQ1NDQ0OTk2MSwtMT
+YwMDU2NTI2LDEwNTQ0NTAzNjcsLTM3OTEwMzI3NywtNzUzNTMx
+OTU0LDEwMDIzODUxNzMsMTMzNTEyNTIzNCwtMTYzOTUzNjYwNC
+wxMTU3MTExNjI4LDQwMzg3MzgxMywtNDIyOTE4MzE2LDgwMDMx
+NTQxMCwtMTY5NTU1ODA0MiwxNzE2MDk5NDc4LDE0NzI1ODc5ND
+UsLTIxMzQyMDMzMjUsMTk1NDEzNTU4NywxMjIyODI3MzE5LDE2
+MTkzNjc4NF19
 -->
