@@ -176,5 +176,6 @@ fun returnsAllSavedPlacesWhenGetAll() {
                     
                     
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUyMTM0NDQsLTM3NTE1ODc4MV19
+eyJoaXN0b3J5IjpbMTc3MjYzMzMwNywtMTI5NTIxMzQ0NCwtMz
+c1MTU4NzgxXX0=
 -->
